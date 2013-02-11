@@ -1,0 +1,10 @@
+{
+  "name": "grunt-init-handlebars",
+  "version": "0.0.1",
+  "devDependencies": {
+    "grunt": "0.4",
+    "bower": "0.7",
+    "grunt-contrib-handlebars": "0.5.4rc7",
+    "grunt-contrib-watch": "0.2"
+  }
+}

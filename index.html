@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html><head>
+  <meta charset='utf-8'>
+  <title>Grunt init Handlebars app</title>
+</head><body>
+
+<div id='container'></div>
+
+<script src='components/jquery/jquery.min.js'></script>
+<script src='components/handlebars/index.js'></script>
+<script src='app/templates.js'></script>
+<script>
+(function (root, $, App) {
+  
+  var $container = $('#container');
+
+  root.renderOne = function (callback) {
+    var template, data, content;
+
+    template = App['src/templates/one.hbs'];
+    data = { id: 1, name: 'Alex' };
+    content = template(data);
+
+    return content;
+  };
+
+  root.renderTwo = function () {
+    var template, data, content;
+
+    template = App['src/templates/two.hbs'];
+    data = { id: 2, name: 'Second' };
+    content = template(data);
+
+    return content;
+  };
+
+  $container.html(root.renderOne());
+
+}(window, window.jQuery, window.InitApp));
+
+</script>
+</body></html>

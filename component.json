@@ -1,0 +1,8 @@
+{
+  "name": "fsa-app",
+  "version": "0.0.1",
+  "dependencies": {
+    "jquery": "1.9.1",
+    "handlebars": "https://raw.github.com/wycats/handlebars.js/1.0.rc.2/dist/handlebars.runtime.js"
+  }
+}
