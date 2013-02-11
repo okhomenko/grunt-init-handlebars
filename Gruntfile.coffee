@@ -3,12 +3,16 @@ module.exports = (grunt) ->
   grunt.initConfig
 
     handlebars:
-      dev:
+      app:
         options:
-          namespace: 'InitApp'
+          namespace: false
+          amd: true 
 
-        src: 'src/**/*.hbs'
-        dest: 'app/templates.js'
+        expand: true
+        cwd: 'src'
+        src: '**/*.hbs'
+        dest: 'app/'
+        ext: '.js'
 
     watch:
       handlebars:
