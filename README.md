@@ -20,3 +20,18 @@ or the same but faster:
 If you want to compile all templates in separate files - please use ```amd``` branch.
 
 After clone - do ```git checkout amd```
+
+or just make some changes in ```Gruntfile.coffee```
+
+```
+  dev:
+    options:
+      namespace: false
+      amd: true 
+
+    expand: true
+    cwd: 'src'
+    src: '**/*.hbs'
+    dest: 'app/'
+    ext: '.js'
+```
